@@ -1,0 +1,98 @@
+//Used Color
+$green: hsl(75, 94%, 57%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 20%);
+$dark-grey: hsl(0, 0%, 12%);
+$off-black: hsl(0, 0%, 8%);
+
+//Used Font
+
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+$inter-font: "Inter";
+
+//Page Style
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: $off-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $inter-font;
+    .card {
+        padding: 30px;
+        background-color: $dark-grey;
+        width: 75%;
+        border-radius: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .personal-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+                margin: 5px;
+            }
+            .profile-pic {
+                border-radius: 50%;
+                width: 30%;
+                height: auto;
+                margin: 0 auto;
+                margin-bottom: 10px;
+            }
+            .personal-name {
+                color: $white;
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+            .personal-location {
+                color: $green;
+                font-size: 0.8rem;
+                font-weight: 700;
+            }
+            .personal-bio {
+                margin-top: 20px;
+                color: $white;
+                font-size: 0.8rem;
+            }
+        }
+        .social-links {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            list-style: none;
+            li {
+                padding: 15px 0 15px;
+                border-radius: 5px;
+                margin-top: 15px;
+                text-align: center;
+                background-color: $grey;
+                cursor: pointer;
+                color: white;
+                font-size: 0.8rem;
+                font-weight: 700;
+                transition: all 0.25s ease;
+                &:hover {
+                    background-color: $green;
+                    color: $dark-grey;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 800px) {
+    .card {
+        width: 20% !important;
+    }
+}

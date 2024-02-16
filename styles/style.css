@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+}
+body .card {
+  padding: 30px;
+  background-color: hsl(0, 0%, 12%);
+  width: 75%;
+  border-radius: 10px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .card .personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .card .personal-info p {
+  margin: 5px;
+}
+body .card .personal-info .profile-pic {
+  border-radius: 50%;
+  width: 30%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+body .card .personal-info .personal-name {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+body .card .personal-info .personal-location {
+  color: hsl(75, 94%, 57%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+body .card .personal-info .personal-bio {
+  margin-top: 20px;
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8rem;
+}
+body .card .social-links {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+}
+body .card .social-links li {
+  padding: 15px 0 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  text-align: center;
+  background-color: hsl(0, 0%, 20%);
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+body .card .social-links li:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 12%);
+}
+
+@media screen and (min-width: 800px) {
+  .card {
+    width: 20% !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
